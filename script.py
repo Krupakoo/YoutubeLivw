@@ -19,7 +19,7 @@ def authenticate():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                "client_secret_2_617843538356-k35er9gv6v6arap0gg5nf6ovbpd8qjfb.apps.googleusercontent.com.json",
+                "-.apps..com.json",
                 SCOPES
             )
             creds = flow.run_local_server(port=8080, prompt='consent')
@@ -62,3 +62,4 @@ if __name__ == "__main__":
     title = "Test Broadcast"
     broadcast_id = create_broadcast(youtube, title, start_time)
     print(f"Broadcast created with ID: {broadcast_id}")
+
